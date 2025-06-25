@@ -5,7 +5,7 @@ const statusDiv = document.getElementById('status');
 
 document.addEventListener('DOMContentLoaded', () => {
     chrome.storage.sync.get(['cookieFormat'], (result) => {
-        formatInput.value = result.cookieFormat || '{{name}}={{value}};';
+        formatInput.value = result.cookieFormat || '{name}={value}; Path={path}; Expires={expires}';
     });
 });
 

@@ -3,12 +3,32 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>CookieParser Options</title>
+    <title>CookieParser Settings</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        textarea {
+            width: 100%;
+            min-height: 60px;
+        }
+
+        #status {
+            color: green;
+            margin-top: 8px;
+        }
+    </style>
 </head>
 
 <body>
-    <h2>Custom Export Format</h2>
-    <textarea id="format" rows="6" cols="50" placeholder="e.g. {{name}}={{value}};"></textarea>
+    <h2>Custom Copy Format</h2>
+    <p>Use placeholders: {name}, {value}, {domain}, {path}, {expires}, {samesite}, {hostonly}, {session}, {secure},
+        {httponly}
+    </p>
+    <textarea id="format" placeholder="{name} = {value}; Path={path}; Expires={expires}"></textarea>
+    <br>
     <button id="save">Save</button>
     <div id="status"></div>
     <script src="options.js"></script>
