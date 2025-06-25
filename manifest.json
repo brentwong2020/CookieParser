@@ -1,0 +1,22 @@
+{
+    "manifest_version": 3,
+    "name": "CookieParser",
+    "version": "1.0",
+    "description": "Edit, copy, and export cookies in a customizable format.",
+    "permissions": [
+        "cookies",
+        "storage",
+        "activeTab",
+        "scripting"
+    ],
+    "host_permissions": [
+        "<all_urls>"
+    ],
+    "action": {
+        "default_popup": "popup.html"
+    },
+    "background": {
+        "service_worker": "background.js"
+    },
+    "options_page": "options.html"
+}
