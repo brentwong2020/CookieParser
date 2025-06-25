@@ -3,6 +3,10 @@ body {
     min-width: 400px;
 }
 
+#option-list {
+    display: flex;
+}
+
 #cookie-list {
     max-height: 400px;
     overflow-y: auto;

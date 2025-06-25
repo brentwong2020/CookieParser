@@ -19,6 +19,10 @@
             color: green;
             margin-top: 8px;
         }
+
+        #default-formats {
+            width: 300px;
+        }
     </style>
 </head>
 
@@ -27,7 +31,13 @@
     <p>Use placeholders: {name}, {value}, {domain}, {path}, {expires}, {samesite}, {hostonly}, {session}, {secure},
         {httponly}
     </p>
+    <label for="default-formats">Default formats:</label>
+    <select id="default-formats"></select>
+    <button id="apply-default">Apply</button>
+    <button id="delete-format">Delete</button>
+    <br>
     <textarea id="format" placeholder="{name} = {value}; Path={path}; Expires={expires}"></textarea>
+    <button id="add-custom">Add as Custom</button>
     <br>
     <button id="save">Save</button>
     <div id="status"></div>
